@@ -1,0 +1,28 @@
+body{
+    background-image: radial-gradient(white, cornflowerblue);
+    margin: 30px;
+}
+nav{
+    background-color: white;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 125px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+nav ul li a:hover{
+    background-color: cornflowerblue;
+}
+.active{
+    background-color: cornflowerblue;
+    text-decoration: underline;
+    padding: 5px;
+}

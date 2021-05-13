@@ -1,0 +1,30 @@
+body{
+    background-image: radial-gradient(white, cornflowerblue);
+    margin: 30px;
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 20px;
+    position: sticky;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+    margin: 20px;
+    margin-left: 135px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+}
+nav ul li a:hover{
+    background-color: rgba(100, 148, 237, 0.459);
+}
+.active{
+    background-color: rgba(100, 148, 237, 0.459);
+    text-decoration: underline;
+    padding: 3px;
+}
