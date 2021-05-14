@@ -2,18 +2,37 @@ body{
     background-image: radial-gradient(white, cornflowerblue);
     margin: 30px;
 }
+#logo{
+    width: 40px;
+    height: 30px;
+    float: left;
+}
+h1{
+    margin-left: 50px;
+    animation-name: name;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes name{
+    0%{ color: rgba(100, 148, 237, 0.459);}
+    100%{color: black; }
+}
 nav{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 20px;
+}
+nav ul{
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgba(255, 255, 255, 0.644);
     height: 20px;
     position: sticky;
 }
-nav ul{
-    list-style: none;
-}
 nav ul li{
     display: inline;
     margin: 20px;
-    margin-left: 135px;
+    margin-left: 140px;
 }
 nav ul li a{
     text-decoration: none;
@@ -21,10 +40,14 @@ nav ul li a{
     padding: 3px;
 }
 nav ul li a:hover{
-    background-color: rgba(100, 148, 237, 0.459);
+    background-color:rgba(100, 148, 237, 0.459);
+    padding-top: 0px;
+    padding-bottom: 3px;
 }
 .active{
     background-color: rgba(100, 148, 237, 0.459);
     text-decoration: underline;
     padding: 3px;
+    padding-bottom: 3px;
+    padding-top: 0px;
 }
