@@ -5,18 +5,82 @@
             Contact
         </title>
         <link rel="stylesheet" href="contact.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <img id="logo" src="logo.webp" alt="logo">
+        <a href="index.html"><img id="logo" src="logo.webp" alt="logo"></a>
         <nav>
             <h1>Mysite</h1>
             <ul>
-                <li><a href="index.html" target="_blank">Index</a></li>
-                <li><a href="portfolio.html" target="_blank">Portfolio</a></li>  
-                <li><a href="cv.html" target="_blank">C.V</a></li>
-                <li><a href="sitereport.html" target="_blank">Site Report</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>  
+                <li><a href="cv.html">C.V</a></li>
+                <li><a href="sitereport.html">Site Report</a></li>
                 <li class="active"><a href="contact.html">Contact</a></li>    
             </ul>
         </nav>
+        <div id="menubtn">
+            <div class="burger1"></div>
+            <div class="burger2"></div>
+            <div class="burger3"></div>
+        </div>
+    <section>
+            <p>Hello there,</p> <p>It's Shaggy</p> <p>For any important/personal inquiry you can call me at :</p> <p>9800000000 , 9800000000</p>    
+    </section>
+        <div class="container">
+            <h2>Press this button to fill a form</h2>
+            <div class="formbutton" id="formbutton">Form</div>
+            <div class="formbox">
+                <!-- close button image from nicepng.com -->
+                <img class="closebtn" src="closeimg.png" alt="closebtn">
+                <!-- form -->
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Name</legend>
+                    <label>First name:</label> <input type="text" name="firstname" placeholder="First name" required>
+                    <label>Last name:</label> <input type="text" name="lastname" placeholder="Last name" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Contacts</legend>
+                <label>Phone no. :</label><input type="number" name="cellnumber" placeholder="Cell number" required>
+                <label>Landline no. :</label> <input type="number" name="landlinenumber" placeholder="Landline number">
+                </fieldset>
+                <fieldset>
+                    <legend>E-mail</legend>
+                    <label>E-mail :</label> <input type="email" name="email" placeholder="abc@gmail.com">
+                </fieldset>
+                <input id="submit" type="submit" name="submit">
+            </form>
+            </div>
+        </div> 
+        <!-- got help from "https://www.youtube.com/watch?v=ptI8g-05VM0" to make form appear on a click -->
+        <script>
+
+            document.getElementById("formbutton").addEventListener("click",function(){
+                document.querySelector(".formbox").style.display = "flex";
+                document.querySelector("h2").style.display = "none";
+            })
+
+            document.querySelector(".closebtn").addEventListener("click",function(){
+                document.querySelector(".formbox").style.display = "none";
+                document.querySelector("h2").style.display = "flex";
+            })
+
+            document.getElementById("menubtn").addEventListener("click",function(){
+                document.querySelector("ul").style.display = "block";
+                document.querySelector("#menubtn").style.display = "none";
+            })
+
+        </script>       
+        <footer>
+            <!-- social media icons -->
+            <p>You can find me on</p>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/shaggy.yadav" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/shaggy_yadav/" target="_blank">Instagram</a>
+                <a href="https://twitter.com/shaggy99415094" target="_blank">Twitter</a> 
+            </div>
+        </footer>
+
     </body>
 </html>

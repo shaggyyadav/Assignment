@@ -5,18 +5,46 @@
             Portfolio
         </title>
         <link rel="stylesheet" href="portfolio.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <img id="logo" src="logo.webp" alt="logo">
+        <!-- from shutterstock.com -->
+        <a href="index.html"><img id="logo" src="logo.webp" alt="logo"></a>
+        <!-- menu -->
         <nav>
             <h1>Mysite</h1>
             <ul>
-                <li><a href="index.html" target="_blank">Index</a></li>
+                <li><a href="index.html" >Index</a></li>
                 <li class="active"><a href="portfolio.html">Portfolio</a></li>  
-                <li><a href="cv.html" target="_blank">C.V</a></li>
-                <li><a href="sitereport.html" target="_blank">Site Report</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>    
+                <li><a href="cv.html" >C.V</a></li>
+                <li><a href="sitereport.html">Site Report</a></li>
+                <li><a href="contact.html" >Contact</a></li>    
             </ul>
         </nav>
+        <div id="menubtn">
+            <div class="burger1"></div>
+            <div class="burger2"></div>
+            <div class="burger3"></div>
+        </div>
+        <!-- placeholder images which will be later on be rel=placed by my work from term 2 -->
+        <section>
+            <!-- from html.com -->
+            <img id="firstplace" src="placeholderimage1.png" alt="1st placehloder">
+            <img id="secondplace" src="placeholderimage2.png" alt="2nd placehloder">
+            <!-- from shutterstock.com -->
+            <img id="thirdplace" src="placeholderimage3.jpg" alt="3rd placehloder">
+            <!-- from shopify -->
+            <img id="fourthplace" src="placeholderimage4.png" alt="4th placehloder">
+        </section>
+        <script>
+
+            document.getElementById("menubtn").addEventListener("click",function(){
+                document.querySelector("ul").style.display = "block";
+                document.querySelector("#menubtn").style.display = "none";
+            })
+
+            
+
+        </script>
     </body>
 </html>

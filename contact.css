@@ -6,6 +6,7 @@ body{
     width: 40px;
     height: 30px;
     float: left;
+    border-radius: 50%;
 }
 h1{
     margin-left: 50px;
@@ -14,8 +15,8 @@ h1{
     animation-duration: 3s;
 }
 @keyframes name{
-    0%{ color: rgba(100, 148, 237, 0.459);}
-    100%{color: black; }
+    0%{color: rgba(100, 148, 237, 0.459);}
+    100%{color: black;}
 }
 nav{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
@@ -50,4 +51,276 @@ nav ul li a:hover{
     padding: 3px;
     padding-bottom: 3px;
     padding-top: 0px;
+}
+section{
+    height: 350px;
+    margin: 50px auto;
+    background-color: rgba(100, 148, 237, 0.767);
+}
+section p{
+    font-family: Calibri;
+    
+}
+section p:nth-child(1){
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+section p:nth-child(2){
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+section p:nth-child(3){
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+section p:nth-child(4){
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    height: 300px;
+    width: 1280px;
+    background-color: rgba(100, 148, 237, 0.767);
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+}
+.container fieldset{
+    border-color: black;
+    margin: 20px;
+}
+h2{
+    margin-left: 250px;
+}
+.formbutton{
+    width: 100px;
+    height: 30px;
+    padding: 10px 15px;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    margin-left: 600px;
+    align-items: center;
+    color: black;
+    text-transform:uppercase;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.formbutton:hover{
+    background-color: black;
+    color: white;
+}
+.formbox{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    background-color: white;
+    margin-left: 350px;
+    display: none;
+    text-align: center;
+
+}
+.closebtn{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 585px;
+    margin-top: -15px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px 0px black;
+}
+#submit{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 20px 0px black;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: black;
+    color: white;
+}
+footer{
+    height: 200px;
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100, 148, 237, 0.767);
+    position: relative;
+    top: 400px;
+}
+footer p{
+    font-family: calibri;
+    font-size: 20px;
+}
+.socialmedia{
+    display: flex;
+}
+.socialmedia a{
+    width: 80px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: white;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.socialmedia a:nth-child(1){
+    color: rgb(0, 0, 182);
+}  
+.socialmedia a:nth-child(2){
+    color: rgb(250, 40, 12);
+}  
+.socialmedia a:nth-child(3){
+    color: rgb(46, 46, 221);
+}
+.socialmedia a:hover{
+    background-color: rgb(0, 0, 0);
+}@media only screen and (max-width: 768px){
+#logo{
+    width: 38px;
+    height: 28px;
+    float: left;
+    border-radius: 50%;
+}    
+nav{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 18px;
+}
+nav ul{
+    clear: both;
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 20px;
+    position: relative;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 52px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+}
+nav ul li a:hover{
+    background-color:rgba(100, 148, 237, 0.459);
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+.active{
+    background-color: rgba(100, 148, 237, 0.459);
+    text-decoration: underline;
+    padding: 3px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+.bannerimage{
+    margin-top: 30px;
+    width: 710px;
+    height: 300px;
+}
+}
+@media only screen and (max-width: 425px){
+#logo{
+    width: 30px;
+    height: 20px;
+    float: left;
+    border-radius: 50%;
+    margin: 0px;
+}
+.bannerimage{
+    display: none;
+}
+nav{
+    position: relative;
+    font-size: 13px;
+    margin: 0px;
+}
+nav ul{
+    background-color: white;
+    width: 120px;
+    height: 165px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+    text-align: center;
+    display: none;    
+}
+nav ul li{
+    padding: 0px;
+    text-align: center;
+    margin: 10px; 
+    display: block;
+    height: 20px;
+}    
+nav ul li a{
+    padding:0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px; 
+    display: block;   
+}
+nav ul li a:hover{
+    background-color:rgba(100, 148, 237, 0.459);
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+.active{
+    background-color: rgba(100, 148, 237, 0.459);
+    text-decoration: underline;
+    padding-bottom: 3px;
+    padding-top: 0px;
+ 
+
+}
+#menubtn{
+    width: 20px;
+    height: 19px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    float: right;
+} 
+.burger1{
+    width: 12px;
+    height: 0px;
+    border: 2px solid black;
+    margin: 1.5px;
+}
+.burger2{
+    width: 12px;
+    height: 0px;
+    border: 2.1px solid black;
+    background-color: black;
+    border-radius: 5px;
+    margin: 1.5px;
+    margin-top: 1.8px;
+}
+.burger3{
+    width: 12px;
+    height: 0px;
+    border: 2px solid black;
+    /* border-radius: 5px; */
+    margin: 1.5px;
+}
 }

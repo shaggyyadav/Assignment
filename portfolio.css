@@ -6,6 +6,7 @@ body{
     width: 40px;
     height: 30px;
     float: left;
+    border-radius: 50%;
 }
 h1{
     margin-left: 50px;
@@ -32,7 +33,7 @@ nav ul{
 nav ul li{
     display: inline;
     margin: 20px;
-    margin-left: 140px;
+    margin-left: 155px;
 }
 nav ul li a{
     text-decoration: none;
@@ -50,4 +51,209 @@ nav ul li a:hover{
     padding: 3px;
     padding-bottom: 3px;
     padding-top: 0px;
+}
+#firstplace{
+    width: 700px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    margin-top: 80px;
+}
+#secondplace{
+    width: 509px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    margin-top: 80px;
+}
+#thirdplace{
+    clear: both;
+    width: 509px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+}    
+#fourthplace{
+    width: 700px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+}    
+@media only screen and (max-width: 768px){
+#logo{
+    width: 38px;
+    height: 28px;
+    float: left;
+    border-radius: 50%;
+}    
+nav{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 18px;
+}
+nav ul{
+    clear: both;
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 20px;
+    position: relative;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 52px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+}
+nav ul li a:hover{
+    background-color:rgba(100, 148, 237, 0.459);
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+.active{
+    background-color: rgba(100, 148, 237, 0.459);
+    text-decoration: underline;
+    padding: 3px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+#firstplace{
+    width: 670px;
+    height: 300px;
+    margin: 20px;
+    margin-top: 80px;
+}
+#secondplace{
+    width: 670px;
+    height: 300px;
+    margin: 20px;
+    margin-top: 40px;
+}
+#thirdplace{
+    width: 315px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+}    
+#fourthplace{
+    width: 305px;
+    height: 300px;
+    float: right;
+    margin: 20px;
+}
+}
+@media only screen and (max-width: 425px){
+body{
+    margin: 15px;
+}
+
+#logo{
+    width: 30px;
+    height: 20px;
+    float: left;
+    border-radius: 50%;
+    margin: 0px;
+}
+.bannerimage{
+    display: none;
+}
+nav{
+    position: relative;
+    font-size: 13px;
+    margin: 0px;
+}
+nav ul{
+    background-color: white;
+    width: 120px;
+    height: 165px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+    text-align: center;
+    display: none;    
+}
+nav ul li{
+    padding: 0px;
+    text-align: center;
+    margin: 10px; 
+    display: block;
+    height: 20px;
+}    
+nav ul li a{
+    padding:0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px; 
+    display: block;   
+}
+nav ul li a:hover{
+    background-color:rgba(100, 148, 237, 0.459);
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+.active{
+    background-color: rgba(100, 148, 237, 0.459);
+    text-decoration: underline;
+    padding-bottom: 3px;
+    padding-top: 0px;
+ 
+
+}
+#menubtn{
+    width: 20px;
+    height: 19px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    float: right;
+} 
+.burger1{
+    width: 12px;
+    height: 0px;
+    border: 2px solid black;
+    margin: 1.5px;
+}
+.burger2{
+    width: 12px;
+    height: 0px;
+    border: 2.1px solid black;
+    background-color: black;
+    border-radius: 5px;
+    margin: 1.5px;
+    margin-top: 1.8px;
+}
+.burger3{
+    width: 12px;
+    height: 0px;
+    border: 2px solid black;
+    margin: 1.5px;
+}
+#firstplace{
+    width: 355px;
+    height: 200px;
+    margin: 20px;
+    margin-top: 40px;
+}
+#secondplace{
+    width: 355px;
+    height: 200px;
+    margin: 20px;
+}
+#thirdplace{
+    clear: both;
+    width: 355px;
+    height: 200px;
+    margin: 20px;
+}    
+#fourthplace{
+    width: 355px;
+    height: 200px;
+    margin: 20px;
+}
 }

@@ -6,23 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <img id="logo" src="logo.webp" alt="logo">
-        <nav>
+        <a href="index.html"><img id="logo" src="logo.webp" alt="logo"></a>
+       <nav>
             <h1>Mysite</h1>
             <ul>
-                <li class="active"><a href="index.html">Index</a></li>
-                <li><a href="portfolio.html" target="_blank">Portfolio</a></li>  
-                <li><a href="cv.html" target="_blank">C.V</a></li>
-                <li><a href="sitereport.html" target="_blank">Site Report</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>    
+                <li><a class="active" href="index.html">Index</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>  
+                <li><a href="cv.html">C.V</a></li>
+                <li><a href="sitereport.html">Site Report</a></li>
+                <li><a href="contact.html">Contact</a></li>    
             </ul>
-        </nav> 
+        </nav>
+        <div id="menubtn">
+            <div class="burger1"></div>
+            <div class="burger2"></div>
+            <div class="burger3"></div>
+        </div>  
         <div>
-            <img class="bannerimage" src="bannerimage.jpg" alt="banner image">
-            <!-- dreamstime.com -->
+            <img class="bannerimage" src="bannerimage.jpg" alt="hourglass">
+            <!-- image from dreamstime.com -->
         </div>
         <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
-        </section>       
+            <p>Hello everyone this is Shaggy. You are welcome to my first website,I hope it meets your expectations and I am able to satisfy you with my works.</p>    
+        </section>
+        <script>
+
+            document.getElementById("menubtn").addEventListener("click",function(){
+                document.querySelector("ul").style.display = "block";
+                document.querySelector("#menubtn").style.display = "none";
+            })
+
+            
+
+        </script>
+
     </body>
+
 </html>
