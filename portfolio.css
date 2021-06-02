@@ -78,7 +78,79 @@ nav ul li a:hover{
     height: 400px;
     float: left;
     margin: 20px;
+}
+@media only screen and (max-width: 1024px){
+#logo{
+    width: 40x;
+    height: 30px;
+    float: left;
+    border-radius: 50%;
 }    
+nav{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 20px;
+}
+nav ul{
+    clear: both;
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 20px;
+    position: relative;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+}
+nav ul li a:hover{
+    background-color:rgba(100, 148, 237, 0.459);
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+.active{
+    background-color: rgba(100, 148, 237, 0.459);
+    text-decoration: underline;
+    padding: 3px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+#firstplace{
+    width: 450px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    margin-top: 80px;
+}
+#secondplace{
+    width: 409px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+    margin-top: 80px;
+}
+#thirdplace{
+    clear: both;
+    width: 450px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+}    
+#fourthplace{
+    width: 409px;
+    height: 400px;
+    float: left;
+    margin: 20px;
+}
+}
 @media only screen and (max-width: 768px){
 #logo{
     width: 38px;
@@ -154,8 +226,8 @@ body{
 }
 
 #logo{
-    width: 30px;
-    height: 20px;
+    width: 35px;
+    height: 25px;
     float: left;
     border-radius: 50%;
     margin: 0px;

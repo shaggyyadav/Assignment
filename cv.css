@@ -65,6 +65,54 @@ table th{
     height: 30px;
     background-color: rgba(100, 148, 237, 0.459);
 }
+@media only screen and (max-width: 1024px){
+#logo{
+    width: 40x;
+    height: 30px;
+    float: left;
+    border-radius: 50%;
+}    
+nav{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 20px;
+}
+nav ul{
+    clear: both;
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 20px;
+    position: relative;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+}
+nav ul li a:hover{
+    background-color:rgba(100, 148, 237, 0.459);
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+.active{
+    background-color: rgba(100, 148, 237, 0.459);
+    text-decoration: underline;
+    padding: 3px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+table{
+    margin-left: 130px;
+}
+}
 @media only screen and (max-width: 768px){
 #logo{
     width: 38px;
@@ -109,16 +157,18 @@ nav ul li a:hover{
     padding-bottom: 3px;
     padding-top: 0px;
  }
-.bannerimage{
-    margin-top: 30px;
-    width: 710px;
-    height: 300px;
+table{
+    margin-left: 100px;
 }
 }
 @media only screen and (max-width: 425px){
+body{
+    margin: 10px;
+}
+
 #logo{
-    width: 30px;
-    height: 20px;
+    width: 35px;
+    height: 25px;
     float: left;
     border-radius: 50%;
     margin: 0px;
@@ -195,5 +245,10 @@ nav ul li a:hover{
     border: 2px solid black;
     /* border-radius: 5px; */
     margin: 1.5px;
+}
+table{
+    
+    margin-top: 50px;
+    margin: 30px;
 }
 }
