@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Contact
@@ -11,6 +11,8 @@
         <a href="index.html"><img id="logo" src="logo.webp" alt="logo"></a>
         <nav>
             <h1>Mysite</h1>
+            <!-- image from nicepng.com -->
+            <img id="closemenu" src="closeimg2.png" alt="closebtn">
             <ul>
                 <li><a href="index.html">Index</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>  
@@ -25,7 +27,7 @@
             <div class="burger3"></div>
         </div>
     <section>
-            <p>Hello there,</p> <p>It's Shaggy</p> <p>For any important/personal inquiry you can call me at :</p> <p>9800000000 , 9800000000</p>    
+            <p>Hello there,</p> <p>It's Shaggy</p> <p>For any important/personal inquiry you can call me at :</p> <p>9803265786 , 9803156256</p>    
     </section>
         <div class="container">
             <h2>Press this button to fill a form</h2>
@@ -34,7 +36,7 @@
                 <!-- close button image from nicepng.com -->
                 <img class="closebtn" src="closeimg.png" alt="closebtn">
                 <!-- form -->
-            <form action="" method="POST">
+            <form action="https://mail.google.com" method="POST">
                 <fieldset>
                     <legend>Name</legend>
                     <label>First name:</label> <input type="text" name="firstname" placeholder="First name" required>
@@ -69,6 +71,13 @@
             document.getElementById("menubtn").addEventListener("click",function(){
                 document.querySelector("ul").style.display = "block";
                 document.querySelector("#menubtn").style.display = "none";
+                document.querySelector("#closemenu").style.display = "flex";
+            })
+
+            document.getElementById("closemenu").addEventListener("click",function(){
+                document.querySelector("ul").style.display = "none";
+                document.querySelector("#closemenu").style.display = "none";
+                document.querySelector("#menubtn").style.display = "block";
             })
 
         </script>       

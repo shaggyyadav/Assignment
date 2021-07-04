@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Curriculum vitae
@@ -11,6 +11,8 @@
         <a href="index.html"><img id="logo" src="logo.webp" alt="logo"></a>
         <nav>
             <h1>Mysite</h1>
+            <!-- image from nicepng.com -->
+            <img id="closemenu" src="closeimg2.png" alt="closebtn">
             <ul>
                 <li><a href="index.html">Index</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>  
@@ -57,7 +59,8 @@
                 July 2018-September 2019<br>
                 <b><u>President</u></b><br>
                 September 2019-2020<br>
-                <li>Led the student body and acted as a mediator between students and the school adminstration.</li><li>Documented the council meetings and financial transaction between the school adminstration and student council.</li><li>organized all school events alongside other excutive members.</li></td>
+                <ul>
+                <li>Led the student body and acted as a mediator between students and the school adminstration.</li><li>Documented the council meetings and financial transaction between the school adminstration and student council.</li><li>organized all school events alongside other excutive members.</li></ul></td>
             </tr>
             <tr>
                 <th>SKILLS AND INTERESTS</th>
@@ -72,9 +75,14 @@
             document.getElementById("menubtn").addEventListener("click",function(){
                 document.querySelector("ul").style.display = "block";
                 document.querySelector("#menubtn").style.display = "none";
+                document.querySelector("#closemenu").style.display = "flex";
             })
 
-            
+            document.getElementById("closemenu").addEventListener("click",function(){
+                document.querySelector("ul").style.display = "none";
+                document.querySelector("#closemenu").style.display = "none";
+                document.querySelector("#menubtn").style.display = "block";
+            })
 
         </script>
 

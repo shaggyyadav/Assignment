@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Portfolio
@@ -13,6 +13,8 @@
         <!-- menu -->
         <nav>
             <h1>Mysite</h1>
+            <!-- image from nicepng.com -->
+            <img id="closemenu" src="closeimg2.png" alt="closebtn">
             <ul>
                 <li><a href="index.html" >Index</a></li>
                 <li class="active"><a href="portfolio.html">Portfolio</a></li>  
@@ -41,6 +43,13 @@
             document.getElementById("menubtn").addEventListener("click",function(){
                 document.querySelector("ul").style.display = "block";
                 document.querySelector("#menubtn").style.display = "none";
+                document.querySelector("#closemenu").style.display = "flex";
+            })
+
+            document.getElementById("closemenu").addEventListener("click",function(){
+                document.querySelector("ul").style.display = "none";
+                document.querySelector("#closemenu").style.display = "none";
+                document.querySelector("#menubtn").style.display = "block";
             })
 
             

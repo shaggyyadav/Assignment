@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Site Report
@@ -11,6 +11,8 @@
         <a href="index.html"><img id="logo" src="logo.webp" alt="logo"></a>
         <nav>
             <h1>Mysite</h1>
+            <!-- image from nicepng.com -->
+            <img id="closemenu" src="closeimg2.png" alt="closebtn">
             <ul>
                 <li><a href="index.html">Index</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>  
@@ -29,10 +31,51 @@
             document.getElementById("menubtn").addEventListener("click",function(){
                 document.querySelector("ul").style.display = "block";
                 document.querySelector("#menubtn").style.display = "none";
+                document.querySelector("#closemenu").style.display = "flex";
             })
 
-            
+            document.getElementById("closemenu").addEventListener("click",function(){
+                document.querySelector("ul").style.display = "none";
+                document.querySelector("#closemenu").style.display = "none";
+                document.querySelector("#menubtn").style.display = "block";
+            })
 
         </script>
+        
+        <section>
+        <h2>Site design</h2>
+        <p>This site is designed to be as minimal as possible because I like minimalistic design. In my opinion a site should look good, feel good and be easy to use. The site follows a basic color profile throughout the pages and has a simple navigation menu which is consistent across all the pages. The name of the site is "Mysite" as it is literally my site. There is a logo in front of the site's name which symbolizes peace. The site consists of 5 pages in total. I'll go through each of their respective design decisions and details later.</p> <p>You can see that about 90% of the overall site is in blue and white color and the rest is also almost just black, so the reason behind it is because I think the colors blue and white represent calmness and harmony. Originally I wanted to go with a plain black and white site but it didn't look so good therefore i changed to the current colors.</p><p>Now let's look at the individual pages in details. I will be mainly focusing on the standard laptop view (1024x810) but I will let you know when I talk about other screen sizes. Let us first go with the <a href="index.html" target="_blank">Index</a> page.<br>          <img class="index" src="indexpage.png" alt="indexpage"><br> Right of the bat we can see there's a big picture of a hourglass because I value time very much and I wanted to show that in one way or other. At first I wanted to go with a picture of a clock but a hourglass looked better. On the top of the page there is a logo representing peace and the name of the site which has a fading animation when the page loads. At the bottom of the page these's a basic introduction.</p><p>Now, let's go to our second page of the site, the <a href="portfolio.html" target="_blank">Portfolio</a> page. <br> <img class="index" src="portfoliopage.png" alt="portfolio page"><br> The basic format of the page is same, the difference is that in this page there are placeholder images which will later be replaced by my work from term 2. The placeholder images are placed in grid format for a cleaner look.</p> <p>Moving on to our next page we have our <a href="cv.html" target="_blank">Curriculum vitae</a> page or CV page.<br> <img class="index" src="cvpage.png" alt="curriculum vitae page"><br> In this page, as the name suggest, we have my CV. My CV is fitted into a table as per the need of the assignment. I went with a black and white finish to make it as simple as possible. </p><p> Up next we have our <a href="sitereport.html" target="_blank">Site report</a> page. In this page I have mentioned the design decisions I took for the website in details. I have not included a image of this page because we are currently in the page and we are looking at it.</p> <p>As the last page we have our <a href="contact.html" target="_blank">Contact</a> page.<br> <img class="index" src="contactpage.PNG" alt="contact page"><br> This page has my all contacts. My personal number and my social media are given in this page. Along with the contacts there is a form aswell following the guideline of the assignment. I'd say, this page was the most diffcult to make because of the form. I needed a close button icon, I had to make the form appear and dissappear on a click so I took help from a youtube video whose link I have provided in the contact's css. <br> <img class="index" src="formimage.PNG" alt="image of form"><br>  </p>
+        <p>All of the pages are fully responsibe in tablet(768X608) and mobile(425X608) view.</p>
+            
+        
+         </section>
+         <section>
+           <h2> References </h2>
+           <p> dreamstime(n/a) Hourglass Time Clock Running Banner Background[online]. Available from:
+            https://www.dreamstime.com/stock-photo-hourglass-time-banner-background-format-wood-image54533019[Accessed 28th june 2021]</p>
+           <p>shutterstock (2002) Peace symbol black transparent[online]. Available from:
+            https://www.shutterstock.com/search/peace+logo [Accessed 26th june 2021] </p>
+            <p> nicepng(n/a) blue close button[online]. Available from:
+                https://www.nicepng.com/ourpic/u2q8e6w7e6a9e6y3_blue-close-button-png-close-button-blue-png/ [Accessed 26th june 2021] </p>   
+            <p> shutterstock (2002) placeholder image[online]. Available from: 
+                https://www.shutterstock.com/search/placeholder+image [Accessed 26th june 2021] </p>
+            <p> shopify (2005) placeholder image[online]. Available from: 
+                https://www.shopify.com/partners/blog/placeholder-images [Accessed 25th june 2021] </p>
+            <p> placeholder (2007) placeholder image[online]. Available from: 
+                https://placeholder.com/ [Accessed 25th june 2021] </p>
+            <p> nicepng(n/a) dark contrast dialouge close[online]. Available form: 
+                https://www.nicepng.com/ourpic/u2q8w7i1i1r5a9y3_high-contrast-dialog-close-close-button-png-icon/
+                [Accessed 26th june 2021]
+            </p>
+            <p> UM tutorial(9th feb 2019) JavaScript Popup window - Popup Login Form[online]. Available form:       https://www.youtube.com/watch?v=ptI8g-05VM0 [Accessed 22nd june 2021] </p>        
+                
+        </section>
+
+
+
+
+
+
+
     </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Index</title>
         <link rel="stylesheet" href="index.css">
@@ -9,6 +9,8 @@
         <a href="index.html"><img id="logo" src="logo.webp" alt="logo"></a>
        <nav>
             <h1>Mysite</h1>
+            <!-- image from nicepng.com -->
+            <img id="closemenu" src="closeimg2.png" alt="closebtn">
             <ul>
                 <li><a class="active" href="index.html">Index</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>  
@@ -17,11 +19,13 @@
                 <li><a href="contact.html">Contact</a></li>    
             </ul>
         </nav>
+        
         <div id="menubtn">
             <div class="burger1"></div>
             <div class="burger2"></div>
             <div class="burger3"></div>
         </div>  
+        
         <div>
             <img class="bannerimage" src="bannerimage.jpg" alt="hourglass">
             <!-- image from dreamstime.com -->
@@ -34,6 +38,13 @@
             document.getElementById("menubtn").addEventListener("click",function(){
                 document.querySelector("ul").style.display = "block";
                 document.querySelector("#menubtn").style.display = "none";
+                document.querySelector("#closemenu").style.display = "flex";
+            })
+
+            document.getElementById("closemenu").addEventListener("click",function(){
+                document.querySelector("ul").style.display = "none";
+                document.querySelector("#closemenu").style.display = "none";
+                document.querySelector("#menubtn").style.display = "block";
             })
 
             
